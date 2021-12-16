@@ -1,9 +1,7 @@
 import { Checkout } from "./Checkout";
 import { BaseItem as Item } from "../items/item.interface";
-import {
-  IPromotionRules,
-  PromotionRules,
-} from "../promotionRules/promotionRules.interface";
+import { IPromotionRules } from "../promotionRules/promotionRules.interface";
+import { PromotionRules } from "../promotionRules/promotionRules";
 
 describe("Unit Testing the Checkout class", () => {
   let promotionalRules: IPromotionRules = PromotionRules;
