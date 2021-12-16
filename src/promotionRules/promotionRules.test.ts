@@ -1,4 +1,4 @@
-import { PromotionRules } from "./promotionRules.interface";
+import { PromotionRules } from "./promotionRules";
 import { waterDiscountItems, regularItems } from "../__mocks__/itemsMocks";
 import { BaseItem as Item } from "../items/item.interface";
 

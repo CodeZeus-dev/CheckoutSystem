@@ -1,9 +1,9 @@
 import { BaseItem as Item } from "./items/item.interface";
 import { Checkout } from "./checkout/Checkout";
-import {
-  IPromotionRules,
-  PromotionRules,
-} from "./promotionRules/promotionRules.interface";
+import { IPromotionRules } from "./promotionRules/promotionRules.interface";
+import { PromotionRules } from "./promotionRules/promotionRules";
+import { printItemsTable } from "./helpers/printItemsTable";
+import { printTotalAmount } from "./helpers/printTotalAmount";
 
 let items: Array<Item> = [
   {
@@ -34,4 +34,6 @@ const checkout: Checkout = new Checkout(promotionalRules);
 
 checkout.scan(items);
 
-console.log(checkout.total());
+printItemsTable(items);
+
+printTotalAmount(checkout.total());

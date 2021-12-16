@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --pretty --transpile-only src/app.ts",
+    "start:app": "ts-node-dev --pretty --transpile-only src/app.ts",
     "test:unit": "jest --collect-coverage"
   },
   "author": "",
